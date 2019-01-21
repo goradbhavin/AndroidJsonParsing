@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardElevation="5dp"
+        card_view:contentPadding="2dp"
+        android:background="@color/colorWhite"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name_list_contact"
+                android:textColor="@color/transfer"
+                android:textColorHint="@color/transfer"
+                android:hint="@string/app_name"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/transfer"
+                android:textColorHint="@color/transfer"
+                android:hint="Email:-"
+                android:textSize="16sp"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tv_email_list_contact"
+                android:textColor="@color/transfer"
+                android:textColorHint="@color/transfer"
+                android:hint="Email"
+                android:textSize="12sp"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/transfer"
+                android:textColorHint="@color/transfer"
+                android:hint="Address:-"
+                android:textSize="16sp"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tv_address_list_contact"
+                android:textColor="@color/transfer"
+                android:textColorHint="@color/transfer"
+                android:hint="Address"
+                android:textSize="12sp"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:textColor="@color/transfer"
+                android:textColorHint="@color/transfer"
+                android:hint="Phone:-"
+                android:textSize="16sp"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tv_mobile_list_contact"
+                android:textColor="@color/transfer"
+                android:textColorHint="@color/transfer"
+                android:hint="Mobile"
+                android:textSize="12sp"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tv_home_list_contact"
+                android:textColor="@color/transfer"
+                android:textColorHint="@color/transfer"
+                android:hint="Home"
+                android:textSize="12sp"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tv_office_list_contact"
+                android:textColor="@color/transfer"
+                android:textColorHint="@color/transfer"
+                android:hint="Office"
+                android:textSize="12sp"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
