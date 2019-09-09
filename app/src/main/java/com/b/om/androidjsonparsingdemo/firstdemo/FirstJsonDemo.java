@@ -51,7 +51,6 @@ public class FirstJsonDemo extends AppCompatActivity {
         @Override
         protected List<Movie> doInBackground(String... strings) {
 
-            HttpHandler handler = new HttpHandler();
             String finalJsonObj = handler.makeServiceCall(strings[0]);
 
             try {
