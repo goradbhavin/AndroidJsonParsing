@@ -21,6 +21,7 @@
         <activity android:name=".firstdemo.FirstJsonDemo"/>
 
         <activity android:name=".seconddemo.SecondJsonDemo"/>
+        <activity android:name=".thirddemo.ThirdJsonDemo"/>
     </application>
 
 </manifest>

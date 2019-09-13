@@ -24,4 +24,11 @@
         android:text="Second Demo"
         />
 
+    <Button
+        android:id="@+id/btnThirdDemo"
+        style="@style/MyButtonStyle"
+        android:onClick="process"
+        android:text="Third Demo"
+        />
+
 </LinearLayout>

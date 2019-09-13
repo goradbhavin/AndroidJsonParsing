@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.b.om.androidjsonparsingdemo.firstdemo.FirstJsonDemo;
 import com.b.om.androidjsonparsingdemo.seconddemo.SecondJsonDemo;
+import com.b.om.androidjsonparsingdemo.thirddemo.ThirdJsonDemo;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
         if (view.getId() == R.id.btnSecondDemo){
 
             Intent intent = new Intent(this,SecondJsonDemo.class);
+            startActivity(intent);
+        }
+
+        if (view.getId() == R.id.btnThirdDemo){
+
+            Intent intent = new Intent(this, ThirdJsonDemo.class);
             startActivity(intent);
         }
     }
