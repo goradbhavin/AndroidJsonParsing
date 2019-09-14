@@ -32,7 +32,8 @@ import retrofit2.Response;
 public class SecondJsonDemo extends AppCompatActivity {
 
     private ListView listView;
-    private static String url = "https://api.androidhive.info/";
+    //private static String url = "https://api.androidhive.info/contacts"; httpUrlConnection
+    private static String url = "https://api.androidhive.info/"; //Retrofit
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -43,10 +44,10 @@ public class SecondJsonDemo extends AppCompatActivity {
 
 
         // First method
-       // new GetContacts().execute(url);
+        new GetContacts().execute(url);
 
         // second method
-        loadContacts();
+        //loadContacts();
 
     }
 
@@ -109,6 +110,7 @@ public class SecondJsonDemo extends AppCompatActivity {
                     JSONObject object = parentArray.getJSONObject(i);
                     JSONObject phoneObject = object.getJSONObject("phone");
                     Contacts contacts = new Contacts();
+
                     contacts.setId(object.getString("id"));
                     contacts.setName(object.getString("name"));
                     contacts.setEmail(object.getString("email"));

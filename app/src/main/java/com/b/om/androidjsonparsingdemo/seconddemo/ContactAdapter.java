@@ -48,12 +48,13 @@ public class ContactAdapter extends ArrayAdapter {
             holder = (ContactViewHolder) convertView.getTag();
         }
 
-        holder.name.setText(contactsList.get(position).getName());
-        holder.email.setText(contactsList.get(position).getEmail());
-        holder.address.setText(contactsList.get(position).getAddress());
-        holder.mobile.setText(contactsList.get(position).getMobile());
-        holder.home.setText(contactsList.get(position).getHome());
-        holder.office.setText(contactsList.get(position).getOffice());
+        Contacts contacts = contactsList.get(position);
+        holder.name.setText(contacts.getName());
+        holder.email.setText(contacts.getEmail());
+        holder.address.setText(contacts.getAddress());
+        holder.mobile.setText(contacts.getMobile());
+        holder.home.setText(contacts.getHome());
+        holder.office.setText(contacts.getOffice());
 
         return convertView;
     }

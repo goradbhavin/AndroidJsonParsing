@@ -5,6 +5,6 @@ import retrofit2.http.GET;
 
 public interface MovieApi {
 
-    @GET("jsonData/moviesData.txt")
+    @GET("/jsonData/moviesData.txt")
     Call<MovieResponse> getMovies();
 }

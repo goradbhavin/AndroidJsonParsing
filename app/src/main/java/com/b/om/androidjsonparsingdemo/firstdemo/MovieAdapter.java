@@ -55,23 +55,25 @@ public class MovieAdapter extends ArrayAdapter{
             holder = (MovieViewHolder) convertView.getTag();
         }
 
-        Glide.with(mContext).load(movieList.get(position).getImage()).into(holder.ivMovieIcon);
-        holder.tvMovie.setText(movieList.get(position).getMovie());
-        holder.tvTagline.setText(movieList.get(position).getTagline());
-        holder.tvYear.setText("Year: " + movieList.get(position).getYear());
-        holder.tvDuration.setText("Duration:" + movieList.get(position).getDuration());
-        holder.tvDirector.setText("Director:" + movieList.get(position).getDirector());
+        Movie movie = movieList.get(position);
+
+        Glide.with(mContext).load(movie.getImage()).into(holder.ivMovieIcon);
+        holder.tvMovie.setText(movie.getMovie());
+        holder.tvTagline.setText(movie.getTagline());
+        holder.tvYear.setText("Year: " + movie.getYear());
+        holder.tvDuration.setText("Duration:" + movie.getDuration());
+        holder.tvDirector.setText("Director:" + movie.getDirector());
 
         // rating bar
-        holder.rbMovieRating.setRating(movieList.get(position).getRating()/2);
+        holder.rbMovieRating.setRating(movie.getRating()/2);
 
         StringBuffer stringBuffer = new StringBuffer();
-        for(Movie.Cast cast : movieList.get(position).getCastList()){
+        for(Movie.Cast cast : movie.getCastList()){
             stringBuffer.append(cast.getName() + ", ");
         }
 
         holder.tvCast.setText("Cast:" + stringBuffer);
-        holder.tvStory.setText(movieList.get(position).getStory());
+        holder.tvStory.setText(movie.getStory());
 
         return convertView;
     }
